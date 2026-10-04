@@ -1,0 +1,6 @@
+services:
+  - type: web
+    name: ed840-oral-defense-practice-lab
+    runtime: static
+    buildCommand: echo "Static site - no build required"
+    staticPublishPath: .

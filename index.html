@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="ED840 Oral Defense Practice Lab: watch the From Paper to Defense video, review the readiness guide, and practice recorded oral defense responses." />
+  <title>ED840 Oral Defense Practice Lab</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to main content</a>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <div>
+        <p class="eyebrow">ED840 • Applied Research Project</p>
+        <h1>Oral Defense Practice Lab</h1>
+        <p class="subtitle">Prepare • Practice • Record</p>
+      </div>
+      <nav aria-label="Primary navigation">
+        <a href="#start">Start Here</a>
+        <a href="#video">Video</a>
+        <a href="#guide">Guide</a>
+        <a href="#practice">Practice Lab</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section id="start" class="hero section">
+      <div class="container hero-grid">
+        <div>
+          <p class="section-kicker">From paper to recorded defense</p>
+          <h2>Know your study. Explain your decisions. Use your evidence.</h2>
+          <p>
+            Your oral defense is a <strong>video recording of you presenting your responses</strong>. It is not a live question-and-answer session. Use this lab to organize your thinking, practice speaking from evidence, and prepare to explain your Applied Research Project with clarity and confidence.
+          </p>
+          <div class="hero-actions">
+            <a class="button primary" href="#practice">Start Practice Lab</a>
+            <a class="button secondary" href="#video">Watch the Video</a>
+          </div>
+        </div>
+        <aside class="quick-card" aria-label="Quick reminder">
+          <h3>Your goal</h3>
+          <p>Do more than summarize your paper. Show that you understand the study, can justify your decisions, and can explain why the findings matter.</p>
+          <div class="framework-line" aria-label="Response framework">
+            <span>Answer</span><span>→</span><span>Justify</span><span>→</span><span>Evidence</span><span>→</span><span>Meaning</span>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <section id="video" class="section alt-section">
+      <div class="container narrow">
+        <p class="section-kicker">1. Watch</p>
+        <h2>From Paper to Defense</h2>
+        <p>Watch this short overview before you begin the practice activities. It walks through the five defense domains and the Answer → Justify → Evidence → Meaning response method.</p>
+        <div class="video-shell">
+          <div class="video-frame">
+            <iframe
+              src="https://share.synthesia.io/embeds/videos/d23b7772-be49-45e9-8d20-826bfcee27b9"
+              loading="lazy"
+              title="Synthesia video player - Go From Paper to Defense"
+              allowfullscreen
+              allow="encrypted-media; fullscreen; microphone; screen-wake-lock;">
+            </iframe>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="guide" class="section">
+      <div class="container guide-grid">
+        <div>
+          <p class="section-kicker">2. Review</p>
+          <h2>Recorded Oral Defense Readiness Guide</h2>
+          <p>The condensed readiness guide helps you review the five defense areas, locate evidence across Chapters 1–5, practice explaining the “why” behind your decisions, and complete a final recording-readiness check.</p>
+          <a class="button primary" href="ED840_Recorded_Video_Oral_Defense_Readiness_Guide.docx" download>Download Readiness Guide</a>
+        </div>
+        <div class="chapter-map" aria-label="Where evidence lives">
+          <h3>Where your evidence lives</h3>
+          <div><strong>Chapter 1</strong><span>Problem • Purpose • Research Questions • Significance</span></div>
+          <div><strong>Chapter 2</strong><span>Literature • Framework • Knowledge Base</span></div>
+          <div><strong>Chapter 3</strong><span>Methodology • Procedures • Analysis • Rigor • Ethics</span></div>
+          <div><strong>Chapter 4</strong><span>Findings • Analysis</span></div>
+          <div><strong>Chapter 5</strong><span>Conclusions • Implications • Recommendations • Limitations</span></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="practice" class="section alt-section">
+      <div class="container">
+        <p class="section-kicker">3. Practice</p>
+        <h2>Interactive Defense Practice Lab</h2>
+        <p class="intro-copy">Choose a defense area, receive a practice question, plan your response, then practice saying it aloud as if you are recording your final defense.</p>
+
+        <div class="privacy-note" role="note">
+          <strong>Private practice:</strong> Your planning notes stay in your browser on this device. They are not submitted or sent to your instructor.
+        </div>
+
+        <div class="domain-picker" role="group" aria-label="Choose a defense domain">
+          <button class="domain-button active" type="button" data-domain="foundation">Research Foundation &amp; Significance</button>
+          <button class="domain-button" type="button" data-domain="methodology">Methodology &amp; Justification</button>
+          <button class="domain-button" type="button" data-domain="findings">Findings &amp; Analysis</button>
+          <button class="domain-button" type="button" data-domain="application">Practical Applications</button>
+          <button class="domain-button" type="button" data-domain="growth">Scholarly Growth &amp; Future Directions</button>
+        </div>
+
+        <div class="practice-panel">
+          <div class="question-header">
+            <div>
+              <p class="small-label">Practice question</p>
+              <h3 id="domainTitle">Research Foundation &amp; Significance</h3>
+            </div>
+            <button id="newQuestion" class="button secondary compact" type="button">Give Me Another Question</button>
+          </div>
+          <p id="questionText" class="practice-question" aria-live="polite"></p>
+
+          <div class="planning-grid">
+            <label>
+              <span><strong>ANSWER</strong> — What is your direct response?</span>
+              <textarea id="answerNotes" rows="5" placeholder="Jot brief speaking notes here..."></textarea>
+            </label>
+            <label>
+              <span><strong>JUSTIFY</strong> — Why does your response make sense?</span>
+              <textarea id="justifyNotes" rows="5" placeholder="Explain your reasoning..."></textarea>
+            </label>
+            <label>
+              <span><strong>EVIDENCE</strong> — What in your study supports it?</span>
+              <textarea id="evidenceNotes" rows="5" placeholder="Identify data, analysis, literature, methodology, or findings..."></textarea>
+            </label>
+            <label>
+              <span><strong>MEANING</strong> — Why does it matter?</span>
+              <textarea id="meaningNotes" rows="5" placeholder="Connect the point to practice, leadership, stakeholders, or the field..."></textarea>
+            </label>
+          </div>
+
+          <div class="practice-actions">
+            <button id="practiceMode" class="button primary" type="button">Practice This Response</button>
+            <button id="clearNotes" class="button text-button" type="button">Clear My Notes</button>
+          </div>
+        </div>
+
+        <div id="speakingPanel" class="speaking-panel hidden" aria-live="polite">
+          <div class="speaking-heading">
+            <div>
+              <p class="small-label">Practice aloud</p>
+              <h3>Present your response as if you are recording your defense.</h3>
+            </div>
+            <div class="timer" aria-label="Practice timer">
+              <span id="timerDisplay">02:00</span>
+            </div>
+          </div>
+          <p id="speakingQuestion" class="practice-question"></p>
+          <p class="camera-reminder"><strong>Practice on camera if possible.</strong> Be clearly visible and audible. Use your notes as prompts, but do not read a full script.</p>
+
+          <div class="timer-controls">
+            <label for="timerLength">Practice time</label>
+            <select id="timerLength">
+              <option value="120">2 minutes</option>
+              <option value="180">3 minutes</option>
+              <option value="240">4 minutes</option>
+            </select>
+            <button id="startTimer" class="button primary compact" type="button">Start Timer</button>
+            <button id="resetTimer" class="button secondary compact" type="button">Reset</button>
+          </div>
+
+          <div class="self-check">
+            <h4>Self-Check</h4>
+            <p>After you practice, check only what you actually demonstrated.</p>
+            <label><input type="checkbox" class="check-item" /> <span>Did I answer directly?</span></label>
+            <label><input type="checkbox" class="check-item" /> <span>Did I justify my reasoning?</span></label>
+            <label><input type="checkbox" class="check-item" /> <span>Did I use evidence from my study?</span></label>
+            <label><input type="checkbox" class="check-item" /> <span>Did I explain the significance or meaning?</span></label>
+            <div id="checkFeedback" class="check-feedback">Complete the four checks after you practice.</div>
+          </div>
+
+          <div class="practice-actions">
+            <button id="backToPlan" class="button secondary" type="button">Return to My Notes</button>
+            <button id="nextPractice" class="button primary" type="button">Try Another Question</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section final-section">
+      <div class="container narrow">
+        <p class="section-kicker">Final readiness test</p>
+        <h2>How do you know that?</h2>
+        <p>For any statement you plan to make in your recorded defense, be able to identify what supports it: your data, your analysis, your methodology, your literature, or your findings.</p>
+        <p class="final-callout">If you can explain where your answer comes from and why it matters, you are defending the study—not simply summarizing it.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p><strong>ED840 Oral Defense Practice Lab</strong></p>
+      <p>This resource supports preparation and practice. Follow your instructor's current directions for the official defense questions, recording requirements, and submission process.</p>
+    </div>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
